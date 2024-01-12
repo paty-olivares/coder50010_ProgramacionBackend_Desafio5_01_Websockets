@@ -1,0 +1,130 @@
+<h1>Esta es la Vista de realTimeProducts</h1>
+<h2>Listado de Productos</h2>
+ {{#each result}}
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Datos del Producto Id: {{this.id}} </h3>
+                <li>
+                    <div>
+                        <p>Nombre Producto: {{this.name}}</p>                        
+                        <p>Precio: $ {{this.price}}</p>
+                        <p>Categoría: {{this.category}}</p>
+                        <p>Código: {{this.code}}</p>                        
+                        <p>Stock: {{this.stock}}</p>                                              
+                    </div>
+                    
+                </li>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+ {{/each}}
+<h2>Formulario para Agregar Productos</h2>
+ <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Agrega un producto:</h3>
+                   <form action="/realTimeProducts" method="post" id="formAddProduct" onsubmit="addProduct(); return false;">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" id="name" placeholder="Ingrese Nombre del Producto" required>
+                            <input class="form-control" type="text" name="price" id="price" placeholder="Ingrese el Precio del producto" required>
+                            <input class="form-control" type="text" name="category" id="category" placeholder="Ingrese la Categoría" required>
+                            <input class="form-control" type="text" name="thumbnail" id="thumbnail" placeholder="Ingrese el Path de la imagen" required>
+                            <input class="form-control" type="text" name="stock" id="stock" placeholder="Ingrese Stock de Inventario del producto" required>
+                            <input class="form-control" type="text" name="code" id="code" placeholder="Ingrese código del producto" required>
+                            <button onclick="addProduct()">Agregar</button>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2>Formulario para Eliminar Productos</h2>
+<div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Eliminar un producto:</h3>
+                    <form id="deleteProduct">
+                        <div class="form-group">
+                             <input class="form-control" type="text" name="idDelete" id="idDelete" placeholder="Ingrese el Id del Producto" required>
+                            <button type="button" id="delete-btn">Eliminar</button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+<h2>Formulario para Actualizar Productos</h2>
+
+   <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3 class="card-title">Actualize un producto:</h3>
+                    <form id="updateForm">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="idUpd" id="idUpd" placeholder="Ingrese ID" required>
+                            <h4 class="my-4">Datos a actualizar:</h4>
+                            <input class="form-control" type="text" name="nameUpd" id="nameUpd" placeholder="Ingrese Nombre del Producto" required>
+                            <input class="form-control" type="text" name="priceUpd" id="priceUpd" placeholder="Ingrese el Precio del producto" required>
+                            <input class="form-control" type="text" name="categoryUpd" id="categoryUpd" placeholder="Ingrese la categoría del producto" required>
+                            <input class="form-control" type="text" name="stockUpd" id="stockUpd" placeholder="Ingrese Stock de Inventario del producto" required> 
+                             <button type="button" id="update-btn">Actualizar</button>                          
+                        </div>
+                         
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+<script src="/css/index.css"></script>
+<style>
+    body {
+  
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color .2s;
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-outline-success {
+    background-color: #0033ff;
+    color: white;
+}
+
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+
+</style>

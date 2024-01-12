@@ -1,0 +1,109 @@
+[
+  {
+    "id": 1,
+    "name": "Royal Canin Small Adult",
+    "price": 300,
+    "category": "perros",
+    "thumbnail": "http://rockmastercoder.com/img/productos_perro_11.png",
+    "stock": 5,
+    "code": "P1"
+  },
+  {
+    "id": 2,
+    "name": "Royal Canin Large Adult",
+    "price": 250,
+    "category": "perros",
+    "thumbnail": "http://rockmastercoder.com/img/productos_perro_2.png",
+    "stock": 10,
+    "code": "P2"
+  },
+  {
+    "id": 3,
+    "name": "Royal Canin Kitten",
+    "price": 200,
+    "category": "gatos",
+    "thumbnail": "http://rockmastercoder.com/img/productos_gato_1.png",
+    "stock": 8,
+    "code": "P3"
+  },
+  {
+    "id": 4,
+    "name": "Placas Identificación Personalizadas",
+    "price": 100,
+    "category": "accesorios",
+    "thumbnail": "http://rockmastercoder.com/img/productos_accesorios_1.png",
+    "stock": 50,
+    "code": "P4"
+  },
+  {
+    "id": 5,
+    "name": "Royal Canin LARGE",
+    "price": 500,
+    "category": "perros",
+    "thumbnail": "https://www.petco.com.mx/medias/104853.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDgxNzh8aW1hZ2UvanBlZ3xoNTcvaGY1Lzk5MTQ0NTM3NTM4ODYvMTA0ODUzLmpwZ18zMDBmdHd8NTljOTZhYTNiM2JmMDVkYzE4MWZmMDlhNWNlZWVlOGE4YTQzNWNiZjdiNTdkMWNmMzBjN2ZhYThlMzQ5YzRmNQ",
+    "stock": 45,
+    "code": "P5"
+  },
+  {
+    "id": 6,
+    "name": "UPDATE2 Marshall Premium Alimento Seco para Hurón Todas las Edades, 1.8 kg",
+    "price": 450,
+    "thumbnail": "https://www.petco.com.mx/medias/102933.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDg3MDR8aW1hZ2UvanBlZ3xoMGYvaDU3LzEwNDYyODEzMTkyMjIyLzEwMjkzMy5qcGdfMzAwZnR3fDIwMmM1ZTAwZjYyZGFmMTg5NWFkYjgxMGQ0NmNkZWEyY2FlMDdjNjlkYzcwODczMTc4ZDQ2MDc3NDJlYzQ1NmI",
+    "stock": 12,
+    "code": "P6"
+  },
+  {
+    "id": 7,
+    "name": "Azoo 9 en 1 Alimento Tipo Sticks Flotantes para Tortugas Acuáticas y Reptiles, 300 g",
+    "price": 100,
+    "category": "reptiles",
+    "thumbnail": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MDAyOXxpbWFnZS9qcGVnfGltYWdlcy9oZjMvaGM2Lzk0MDAwMDcyOTUwMDYuanBnfDgxZDcyYmU1MTViM2RjODlmMzMyMTJlODFhOTYyOTUwOTYyM2RhYjc3OWU5YWIyMGVmZWIxZTkyNzIzMzJlODY",
+    "stock": 20,
+    "code": "P7"
+  },
+  {
+    "id": 8,
+    "name": "NexGard Antipulgas Masticable Desparasitante Externo para Perro, X-Grande",
+    "price": 246,
+    "category": "perros",
+    "thumbnail": "https://www.petco.com.mx/medias/138422.jpg-300ftw?context=bWFzdGVyfHJvb3R8ODY1Njl8aW1hZ2UvanBlZ3xoODkvaDdiLzEwNDczMDEzNTc1NzEwLzEzODQyMi5qcGdfMzAwZnR3fDFlNWQyYzEzODczYTBkMDc3Y2EyMTA1YjA3NjNkNmM5ZTViM2FhM2NhMjhlZDRlMTI0MmM4OGYxNzI2YTUzODQ",
+    "stock": 100,
+    "code": "P8"
+  },
+  {
+    "id": 9,
+    "name": "Tetra Cichlid Alimento en Sticks para Cíclidos, 320 g",
+    "price": 484,
+    "category": "peces",
+    "thumbnail": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3MDIxMXxpbWFnZS9qcGVnfGltYWdlcy9oNjkvaGRmLzkzNjkwNDY1ODEyNzguanBnfGE5YTUwMDJjMGRmZjk4NjNiZDU2OGE5YjI2ZGM4OTIzYzQzNzA1YTY2OTMxM2UyYzVlMDM0MmNlOTBhYmZkM2E",
+    "stock": 150,
+    "code": "P9"
+  },
+  {
+    "id": 10,
+    "name": "Tetra Acuario para Peces, 37.8 L",
+    "price": 790,
+    "category": "peces",
+    "thumbnail": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w0MjE0MHxpbWFnZS9qcGVnfGltYWdlcy9oNDQvaDk2Lzk0MTIyNTgwNzA1NTguanBnfDJjYTY2ZjE1NTg0OWJmYWI0NTVhOTIyYTVjYjdiYWNlYTgwOWNhZDA0Njk2ZDYzYTNhNzU4YTk4YmQxNTQ4Njk",
+    "stock": 45,
+    "code": "P10"
+  },
+  {
+    "code": "NFCKGHRLT9TF",
+    "thumbnail": "https://media.istockphoto.com/id/990360418/es/vector/juego-de-perro-de-dibujos-animados-trucos-de-perros-y-acci%C3%B3n-de-cavar-la-tierra-comiendo.jpg?s=612x612&w=0&k=20&c=hMGa71RFx1QyJUt1U0DDTQLd3WUKuNRMppfGBRBON9c=",
+    "id": 11,
+    "name": " Alpiste Con Vitamina E Y Proteínas",
+    "price": "12",
+    "category": "pajaros",
+    "stock": "21"
+  },
+  {
+    "name": "Sueter de perrito Talla XL",
+    "category": "perros",
+    "price": "150",
+    "stock": "20",
+    "code": "P334494",
+    "thumbnail": "Not available yet",
+    "id": 12
+  }
+]
